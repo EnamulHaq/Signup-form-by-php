@@ -3,18 +3,52 @@
 <head>
 	<title>Sign up form</title>
 </head>
+<style type="text/css">
+  .form{
+    text-align: center;
+    border: 2px solid beige;
+    margin-left: 29rem;
+    margin-right: 29rem;
+    margin-top: 20rem;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 37px;
+  }
+  input[type=text]{
+    width: 205px;
+    padding: 8px;
+  }
+  input[type=email]{
+    width: 205px;
+    padding: 8px;
+  }
+  input[type=submit]{
+    font-size: 23px;
+    color: green;
+    line-height: 36px;
+    margin-top: 17px;
+  }
+  .form h2{
+    color: #75e34c;
+  }
+</style>
 <body>
-  <form action="signup.php" method="post">
-  	
-  	<label>First Name</label><br>
-  	<input type="text" name="firstname"><br>
+  <div class="form">
+    <h2>Sign Up</h2>
+    <form action="signup.php" method="post">
+    
+    <label>First Name</label><br>
+    <input type="text" name="firstname"><br>
 
-  	<label>Last Name</label><br>
-  	<input type="text" name="lastname"><br>
+    <label>Last Name</label><br>
+    <input type="text" name="lastname"><br>
 
-  	<label>Email Address</label><br>
-  	<input type="email" name="email"><br>
-  	<input type="submit" value="submit">
+    <label>Email Address</label><br>
+    <input type="email" name="email"><br>
+    <input type="submit" value="submit">
   </form>
+  </div>
 </body>
 </html>
